@@ -467,23 +467,21 @@ body >header a {
   text-align: center;
   margin: auto;
   width: 86%;
-  font-family: "chalkboardse-bold-webfont";
-  font-size: 200%;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-size: 160%;
+  line-height: 1.7;
+  font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    margin-top: 0.2em;
-    font-size: 240%;
+    margin-top: 0.3em;
+    font-size: 190%;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
-    margin-top: 0.2em;
-    font-size: 280%;
-    line-height: 1.5;
+    margin-top: 0.4em;
+    font-size: 220%;
   }
 }
 #textlogo h2.blog-motto {
@@ -2144,9 +2142,8 @@ footer {
   }
 }
 .copyright {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "chalkboardse-bold-webfont";
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-size: 1em;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -2185,10 +2182,10 @@ footer {
 .article-content pre,
 .article-content .highlight,
 .article-content .highlight pre {
-  background: #eee;
+  background: highlight-background;
   margin: 0.5em 0;
   padding: 0.5em 2%;
-  color: #4d4d4c;
+  color: highlight-foreground;
   line-height: 1.5;
   font-size: 0.8em;
   -webkit-border-radius: 0.35em;
@@ -2204,7 +2201,7 @@ footer {
 }
 .article-content .highlight .gutter pre,
 .article-content .gist .gist-file .gist-data .line-numbers {
-  color: #999;
+  color: highlight-line-numbers;
   font-size: 0.4em;
 }
 @media only screen and (min-width: 568px) {
@@ -2243,7 +2240,7 @@ footer {
   zoom: 1;
   font-size: 0.85em;
   text-align: left;
-  color: #8e908c;
+  color: highlight-comment;
   line-height: 1em;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
@@ -2268,7 +2265,7 @@ footer {
 }
 .article-content .gist {
   margin: 0.5em 0;
-  background: #eee;
+  background: highlight-background;
   padding: 1em 2%;
   -webkit-border-radius: 0.35em;
   border-radius: 0.35em;
@@ -2294,11 +2291,11 @@ footer {
   margin: 0;
   padding: 0;
   border: none;
-  background: #eee;
+  background: highlight-background;
 }
 .article-content .gist .gist-file .gist-meta {
-  background: #eee;
-  color: #8e908c;
+  background: highlight-background;
+  color: highlight-comment;
   font: 0.85em "Georgia", serif;
   text-shadow: 0 0;
   padding: 0;
@@ -2313,7 +2310,7 @@ footer {
 }
 pre .comment,
 pre .title {
-  color: #8e908c;
+  color: highlight-comment;
 }
 pre .variable,
 pre .attribute,
@@ -2327,7 +2324,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: highlight-red;
 }
 pre .number,
 pre .preprocessor,
@@ -2335,12 +2332,12 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #f5871f;
+  color: highlight-orange;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #718c00;
+  color: highlight-green;
 }
 pre .string,
 pre .value,
@@ -2348,10 +2345,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #718c00;
+  color: highlight-green;
 }
 pre .css .hexcolor {
-  color: #3e999f;
+  color: highlight-aqua;
 }
 pre .function,
 pre .python .decorator,
@@ -2361,11 +2358,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: highlight-blue;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: highlight-purple;
 }
 .gallery {
   overflow: hidden;
