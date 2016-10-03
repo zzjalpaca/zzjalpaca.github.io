@@ -467,22 +467,22 @@ body >header a {
   text-align: center;
   margin: auto;
   width: 86%;
-  font-family: "coveredbyyourgrace-webfont";
-  font-size: 220%;
+  font-family: "chalkboardse-bold-webfont";
+  font-size: 200%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    margin-top: 0.4em;
-    font-size: 260%;
+    margin-top: 0.2em;
+    font-size: 240%;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
-    margin-top: 0.4em;
-    font-size: 300%;
+    margin-top: 0.2em;
+    font-size: 280%;
     line-height: 1.5;
   }
 }
@@ -2146,8 +2146,7 @@ footer {
 .copyright {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "coveredbyyourgrace-webfont";
-  font-size: 1.3em;
+  font-family: "chalkboardse-bold-webfont";
   width: 100%;
   color: #fff;
   text-align: center;
