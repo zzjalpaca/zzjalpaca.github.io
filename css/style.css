@@ -467,21 +467,23 @@ body >header a {
   text-align: center;
   margin: auto;
   width: 86%;
-  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
-  font-size: 160%;
-  line-height: 1.7;
-  font-weight: normal;
+  font-family: "chalkboardse-bold-webfont";
+  font-size: 200%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    margin-top: 0.3em;
-    font-size: 190%;
+    margin-top: 0.2em;
+    font-size: 240%;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
-    margin-top: 0.4em;
-    font-size: 220%;
+    margin-top: 0.2em;
+    font-size: 280%;
+    line-height: 1.5;
   }
 }
 #textlogo h2.blog-motto {
@@ -1591,7 +1593,7 @@ section.comment {
   display: none;
   position: fixed;
   right: 7.5%;
-  top: 260px;
+  top: 320px;
 }
 .openaside a {
   display: block;
@@ -1889,7 +1891,7 @@ section.comment {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
-  background: no-repeat url("../") left top;
+  background: no-repeat url("../img/author2.jpg") left top;
   -webkit-background-size: 6.875em 6.875em;
   -moz-background-size: 6.875em 6.875em;
   background-size: 6.875em 6.875em;
@@ -2116,7 +2118,7 @@ footer {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
-  background: no-repeat url("../") left top;
+  background: no-repeat url("../img/author2.jpg") left top;
   -webkit-background-size: 6.875em 6.875em;
   -moz-background-size: 6.875em 6.875em;
   background-size: 6.875em 6.875em;
@@ -2142,8 +2144,9 @@ footer {
   }
 }
 .copyright {
-  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
-  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "chalkboardse-bold-webfont";
   width: 100%;
   color: #fff;
   text-align: center;
@@ -2182,10 +2185,10 @@ footer {
 .article-content pre,
 .article-content .highlight,
 .article-content .highlight pre {
-  background: highlight-background;
+  background: #eee;
   margin: 0.5em 0;
   padding: 0.5em 2%;
-  color: highlight-foreground;
+  color: #4d4d4c;
   line-height: 1.5;
   font-size: 0.8em;
   -webkit-border-radius: 0.35em;
@@ -2201,7 +2204,7 @@ footer {
 }
 .article-content .highlight .gutter pre,
 .article-content .gist .gist-file .gist-data .line-numbers {
-  color: highlight-line-numbers;
+  color: #999;
   font-size: 0.4em;
 }
 @media only screen and (min-width: 568px) {
@@ -2240,7 +2243,7 @@ footer {
   zoom: 1;
   font-size: 0.85em;
   text-align: left;
-  color: highlight-comment;
+  color: #8e908c;
   line-height: 1em;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
@@ -2265,7 +2268,7 @@ footer {
 }
 .article-content .gist {
   margin: 0.5em 0;
-  background: highlight-background;
+  background: #eee;
   padding: 1em 2%;
   -webkit-border-radius: 0.35em;
   border-radius: 0.35em;
@@ -2291,11 +2294,11 @@ footer {
   margin: 0;
   padding: 0;
   border: none;
-  background: highlight-background;
+  background: #eee;
 }
 .article-content .gist .gist-file .gist-meta {
-  background: highlight-background;
-  color: highlight-comment;
+  background: #eee;
+  color: #8e908c;
   font: 0.85em "Georgia", serif;
   text-shadow: 0 0;
   padding: 0;
@@ -2310,7 +2313,7 @@ footer {
 }
 pre .comment,
 pre .title {
-  color: highlight-comment;
+  color: #8e908c;
 }
 pre .variable,
 pre .attribute,
@@ -2324,7 +2327,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: highlight-red;
+  color: #c82829;
 }
 pre .number,
 pre .preprocessor,
@@ -2332,12 +2335,12 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: highlight-orange;
+  color: #f5871f;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: highlight-green;
+  color: #718c00;
 }
 pre .string,
 pre .value,
@@ -2345,10 +2348,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: highlight-green;
+  color: #718c00;
 }
 pre .css .hexcolor {
-  color: highlight-aqua;
+  color: #3e999f;
 }
 pre .function,
 pre .python .decorator,
@@ -2358,11 +2361,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: highlight-blue;
+  color: #4271ae;
 }
 pre .keyword,
 pre .javascript .function {
-  color: highlight-purple;
+  color: #8959a8;
 }
 .gallery {
   overflow: hidden;
