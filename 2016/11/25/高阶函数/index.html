@@ -11,31 +11,22 @@
     
 
     
-    <meta name="description" content="高阶函数
-map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
+    <meta name="description" content="高阶函数map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
 
-
-
-map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(">
+map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(x)=">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高阶函数">
 <meta property="og:url" content="http://blog.zhangzijian.vip/2016/11/25/高阶函数/index.html">
 <meta property="og:site_name" content="zhangzijian">
-<meta property="og:description" content="高阶函数
-map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
+<meta property="og:description" content="高阶函数map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
 
-
-
-map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(">
-<meta property="og:updated_time" content="2016-11-27T12:24:20.940Z">
+map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(x)=">
+<meta property="og:updated_time" content="2016-11-27T12:27:09.914Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高阶函数">
-<meta name="twitter:description" content="高阶函数
-map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
+<meta name="twitter:description" content="高阶函数map 不会改变原数组12345var arr = [2,3,4,5];// 将所有的值加6;var newArr = arr.map(function(val)&amp;#123;    return val + 6;&amp;#125;)console.log(newArr); //[8, 9, 10, 11]
 
-
-
-map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(">
+map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(x)=">
 
     
     <link rel="alternative" href="atom.xml" title="zhangzijian" type="application/atom+xml">
@@ -112,39 +103,27 @@ map()作为高阶函数，事实上它把运算规则抽象了，因此，我们
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#高阶函数"><span class="toc-number">1.</span> <span class="toc-text">高阶函数</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#高阶函数"><span class="toc-number">1.</span> <span class="toc-text">高阶函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#map-不会改变原数组"><span class="toc-number">1.0.1.</span> <span class="toc-text">map 不会改变原数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reduce-不会改变原数组"><span class="toc-number">1.0.2.</span> <span class="toc-text">reduce 不会改变原数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filter-过滤-不会改变原数组"><span class="toc-number">1.0.3.</span> <span class="toc-text">filter  过滤 不会改变原数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sort-排序-会改变原数组"><span class="toc-number">1.0.4.</span> <span class="toc-text">sort 排序 会改变原数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reverse-翻转排序"><span class="toc-number">1.0.5.</span> <span class="toc-text">reverse 翻转排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#concat-连接两个数组"><span class="toc-number">1.0.6.</span> <span class="toc-text">concat 连接两个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#split-字符串分割为数组"><span class="toc-number">1.0.7.</span> <span class="toc-text">split 字符串分割为数组</span></a></li></ol></li></ol></li></ol>
 		
 		</div>
 		
-		<h1 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h1><ul>
-<li>map 不会改变原数组<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];<span class="comment">// 将所有的值加6;</span></div><div class="line"><span class="keyword">var</span> newArr = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> val + <span class="number">6</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr); <span class="comment">//[8, 9, 10, 11]</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
+		<h1 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h1><h3 id="map-不会改变原数组"><a href="#map-不会改变原数组" class="headerlink" title="map 不会改变原数组"></a>map 不会改变原数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];<span class="comment">// 将所有的值加6;</span></div><div class="line"><span class="keyword">var</span> newArr = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> val + <span class="number">6</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr); <span class="comment">//[8, 9, 10, 11]</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>map()作为高阶函数，事实上它把运算规则抽象了，因此，我们不但可以计算简单的f(x)=x2，还可以计算任意复杂的函数，比如，把Array的所有数字转为字符串：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</div><div class="line">arr.map(<span class="built_in">String</span>); <span class="comment">// ['1', '2', '3', '4', '5', '6', '7', '8', '9']</span></div></pre></td></tr></table></figure></p>
 </blockquote>
-<ul>
-<li>reduce 不会改变原数组</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">4</span>]; <span class="comment">// 所有值累加</span></div><div class="line"><span class="keyword">var</span> newArr1 = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">previousVal, currentVal</span>) </span>&#123;</div><div class="line">    <span class="comment">// body...</span></div><div class="line">    <span class="keyword">return</span> previousVal + currentVal;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr1);<span class="comment">// 22</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> newArr2 = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">previousVal, currentVal</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> previousVal * <span class="number">10</span> + currentVal; <span class="comment">// 34249</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<ul>
-<li><p>filter  过滤 不会改变原数组</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">4</span>]; <span class="comment">// 找到3以上的数</span></div><div class="line"><span class="keyword">var</span> newArr = arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> val&gt;<span class="number">3</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr);<span class="comment">// [4, 9, 4]</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>sort 排序 会改变原数组</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">9</span>];</div><div class="line">arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">x, y</span>) </span>&#123;</div><div class="line">    <span class="comment">// body...</span></div><div class="line">    <span class="keyword">return</span> x - y;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<ul>
-<li>reverse 翻转排序</li>
-<li>concat 连接两个数组</li>
-<li>split 字符串分割为数组</li>
-</ul>
-  
+<h3 id="reduce-不会改变原数组"><a href="#reduce-不会改变原数组" class="headerlink" title="reduce 不会改变原数组"></a>reduce 不会改变原数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">4</span>]; <span class="comment">// 所有值累加</span></div><div class="line"><span class="keyword">var</span> newArr1 = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">previousVal, currentVal</span>) </span>&#123;</div><div class="line">    <span class="comment">// body...</span></div><div class="line">    <span class="keyword">return</span> previousVal + currentVal;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr1);<span class="comment">// 22</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> newArr2 = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">previousVal, currentVal</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> previousVal * <span class="number">10</span> + currentVal; <span class="comment">// 34249</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="filter-过滤-不会改变原数组"><a href="#filter-过滤-不会改变原数组" class="headerlink" title="filter  过滤 不会改变原数组"></a>filter  过滤 不会改变原数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">4</span>]; <span class="comment">// 找到3以上的数</span></div><div class="line"><span class="keyword">var</span> newArr = arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> val&gt;<span class="number">3</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(newArr);<span class="comment">// [4, 9, 4]</span></div></pre></td></tr></table></figure>
+<h3 id="sort-排序-会改变原数组"><a href="#sort-排序-会改变原数组" class="headerlink" title="sort 排序 会改变原数组"></a>sort 排序 会改变原数组</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">9</span>];</div><div class="line">arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">x, y</span>) </span>&#123;</div><div class="line">    <span class="comment">// body...</span></div><div class="line">    <span class="keyword">return</span> x - y;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="reverse-翻转排序"><a href="#reverse-翻转排序" class="headerlink" title="reverse 翻转排序"></a>reverse 翻转排序</h3><h3 id="concat-连接两个数组"><a href="#concat-连接两个数组" class="headerlink" title="concat 连接两个数组"></a>concat 连接两个数组</h3><h3 id="split-字符串分割为数组"><a href="#split-字符串分割为数组" class="headerlink" title="split 字符串分割为数组"></a>split 字符串分割为数组</h3>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/map/">map</a>
+  </div>
 
 </div>
 
@@ -158,15 +137,15 @@ map()作为高阶函数，事实上它把运算规则抽象了，因此，我们
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/11/27/hexo常用命令/" title="hexo常用命令">
+ <a href="/2016/11/25/面向对象/" title="面向对象">
   <span>
-  hexo常用命令</span>
+  面向对象</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2016/10/02/面向对象/"  title="">
+<a href="/2016/10/01/补课内容/"  title="">
  <span>(no title)
 </span>
 </a>
@@ -215,6 +194,22 @@ map()作为高阶函数，事实上它把运算规则抽象了，因此，我们
 		
 			
 				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ionic-app/" title="ionic app">ionic app<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Array/" title="Array">Array<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/object-prototype/" title="object prototype">object prototype<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/map/" title="map">map<sup>1</sup></a></li>
 			
 		
 		</ul>
