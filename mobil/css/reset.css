@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+---------------------------------
+Site: 项目名称
+Author: 负责人
+Time:时间
+-----
+Updated: 修改时间
+Updated by: 修改人
+---------------------------------
+*/
+* { margin:0; padding:0; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,pre, a, abbr, acronym, address, big, cite, code, del,dfn, em, font, img, ins, kbd,q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul,fieldset, form, label, legend, input, select, textarea, table, caption, tbody, tfoot,thead, tr, th, td{margin: 0;padding: 0;}
+a img, img, iframe {border:none;-webkit-tap-highlight-color:transparent;}
+a{text-decoration: none;color: #5a5a5a;}
+:focus {outline: none; }
+a,area {blr:expression(this.onFocus=this.blur())}
+ul,ol,li{list-style:none;}
+table{border-collapse:separate;border-collapse:collapse;border-spacing:0}
+caption, th, td {text-align: left;font-weight: normal;}
+select, textarea, input, button {vertical-align:middle;font-family:inherit;font-size:100%;}
+q:before, q:after, blockquote:before, blockquote:after {content: "";}
+blockquote, q {quotes: "" "";}
+/*h1 {font-size:16px;}
+h2 {font-size:14px;}
+h3 {font-size:14px;}*/
+/*h4, h5, h6 {font-size:100%;}*/
+h6 {font-weight:normal;}
+html{overflow:-moz-scrollbars-vertical;overflow-x:hiddden;overflow-y:scroll;-webkit-tap-highlight-color:transparent;}
+body,button,input,select,textarea,th{font:12px/1.5em "黑体", Verdana, Arial, Tahoma, Geneva, STHeiTi, SimSun, sans-serif; color:#000; }
+em{font-style: normal;}
+
+.clear{ clear:both;}
+.clearfix{display:inline-block;margin:0;padding:0;list-style:none;zoom:1;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+input[type=button]{
+-webkit-appearance:none;
+-moz-appearance:none;
+outline:none
+}
+
+
+.fl{float:left;}
+.fr{float:right;}
+.block{ display:block}
+.none{ display:none;}
+.se{color: #fc6d3d}
+p,h3,span,a{
+	max-height:100000px;
+}
