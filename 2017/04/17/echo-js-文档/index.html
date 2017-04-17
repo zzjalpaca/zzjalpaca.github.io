@@ -1,0 +1,440 @@
+
+ <!DOCTYPE HTML>
+<html lang="chinese">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>echo.js 文档 | zhangzijian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="zhangzijian">
+    
+
+    
+    <meta name="description" content="echo.js介绍echo.js一个 js 懒加载图片小型库, echo 是快速的，只要2k大小， 并且运用了html5 属性data-更为简单，echo 只支持ie8以上。
+安装12bower insatll echo.jsnpm install echo.js
+###
+使用Echo.js很简单，将图像直接添加到页面中，只需将一个data-echo属性添加到img标签。或者，如果要使用Echo来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="echo.js 文档">
+<meta property="og:url" content="http://blog.zhangzijian.vip/2017/04/17/echo-js-文档/index.html">
+<meta property="og:site_name" content="zhangzijian">
+<meta property="og:description" content="echo.js介绍echo.js一个 js 懒加载图片小型库, echo 是快速的，只要2k大小， 并且运用了html5 属性data-更为简单，echo 只支持ie8以上。
+安装12bower insatll echo.jsnpm install echo.js
+###
+使用Echo.js很简单，将图像直接添加到页面中，只需将一个data-echo属性添加到img标签。或者，如果要使用Echo来">
+<meta property="og:updated_time" content="2017-04-17T03:38:55.803Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="echo.js 文档">
+<meta name="twitter:description" content="echo.js介绍echo.js一个 js 懒加载图片小型库, echo 是快速的，只要2k大小， 并且运用了html5 属性data-更为简单，echo 只支持ie8以上。
+安装12bower insatll echo.jsnpm install echo.js
+###
+使用Echo.js很简单，将图像直接添加到页面中，只需将一个data-echo属性添加到img标签。或者，如果要使用Echo来">
+
+    
+    <link rel="alternative" href="atom.xml" title="zhangzijian" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/unnamed4_n_mSY_icon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/profile.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/profile.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/0a1ed9b64_l.jpg" alt="zhangzijian" title="zhangzijian"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="zhangzijian">zhangzijian</a></h1>
+				<h2 class="blog-motto">code change the world</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+						<li><a href="/tags">Tags</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="Search"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/04/17/echo-js-文档/" title="echo.js 文档" itemprop="url">echo.js 文档</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="zhangzijian" target="_blank" itemprop="author">zhangzijian</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-17T03:38:19.000Z" itemprop="datePublished"> Published 2017-04-17</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#echo-js"><span class="toc-number">1.</span> <span class="toc-text">echo.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍"><span class="toc-number">1.0.1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">1.0.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#init-options"><span class="toc-number">1.0.3.</span> <span class="toc-text">.init() (options)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#offset"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">offset</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetVertical"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">offsetVertical</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetHorizontal"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">offsetHorizontal</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetTop"><span class="toc-number">1.0.3.4.</span> <span class="toc-text">offsetTop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetBottom"><span class="toc-number">1.0.3.5.</span> <span class="toc-text">offsetBottom</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetLeft"><span class="toc-number">1.0.3.6.</span> <span class="toc-text">offsetLeft</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#offsetRight"><span class="toc-number">1.0.3.7.</span> <span class="toc-text">offsetRight</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#throttle"><span class="toc-number">1.0.3.8.</span> <span class="toc-text">throttle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#debounce"><span class="toc-number">1.0.3.9.</span> <span class="toc-text">debounce</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#unload"><span class="toc-number">1.0.3.10.</span> <span class="toc-text">unload</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#callback"><span class="toc-number">1.0.3.11.</span> <span class="toc-text">callback</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#render"><span class="toc-number">1.0.3.12.</span> <span class="toc-text">.render()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuring-Echo"><span class="toc-number">1.0.4.</span> <span class="toc-text">Configuring Echo</span></a></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="echo-js"><a href="#echo-js" class="headerlink" title="echo.js"></a>echo.js</h1><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>echo.js一个 js 懒加载图片小型库, echo 是快速的，只要2k大小， 并且运用了html5 属性<code>data-</code>更为简单，<br>echo 只支持ie8以上。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bower insatll echo.js</div><div class="line">npm install echo.js</div></pre></td></tr></table></figure>
+<p>###</p>
+<p>使用Echo.js很简单，将图像直接添加到页面中，只需将一个<code>data-echo</code>属性添加到img标签。或者，如果要使用Echo来延迟加载背景图像，只需将<code>data-echo-background</code>属性添加到带有图像URL的元素。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">  &lt;img src="img/blank.gif" alt="Photo" data-echo="img/photo.jpg"&gt;</div><div class="line"></div><div class="line">  &lt;script src="dist/echo.js"&gt;&lt;/script&gt;</div><div class="line">  &lt;script&gt;</div><div class="line">  echo.init(&#123;</div><div class="line">    offset: 100,</div><div class="line">    throttle: 250,</div><div class="line">    unload: false,</div><div class="line">    callback: function (element, op) &#123;</div><div class="line">      console.log(element, 'has been', op + 'ed')</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  // echo.render(); is also available for non-scroll callbacks</div><div class="line">  &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="init-options"><a href="#init-options" class="headerlink" title=".init() (options)"></a>.init() (options)</h3><h4 id="offset"><a href="#offset" class="headerlink" title="offset"></a>offset</h4><blockquote>
+<p>偏移选项允许您指定您希望Echo开始加载图像的视口左下方以及左侧以及右侧的距离。如果指定0，Echo将在视口中立即加载您的图像，如果要在视口下方或上方加载1000px，请使用1000。</p>
+<h4 id="offsetVertical"><a href="#offsetVertical" class="headerlink" title="offsetVertical"></a>offsetVertical</h4><p>offsetVertical选项允许您指定Echo开始载入图像的视口上方和下方的距离。</p>
+<h4 id="offsetHorizontal"><a href="#offsetHorizontal" class="headerlink" title="offsetHorizontal"></a>offsetHorizontal</h4><p>偏移水平选项允许您指定希望Echo开始加载图像的视口左侧和右侧的距离。</p>
+<h4 id="offsetTop"><a href="#offsetTop" class="headerlink" title="offsetTop"></a>offsetTop</h4><p>offsetTop选项允许您指定您希望Echo开始载入图像的视口以上的距离。</p>
+<h4 id="offsetBottom"><a href="#offsetBottom" class="headerlink" title="offsetBottom"></a>offsetBottom</h4><p>offsetBottom选项允许您指定Echo开始载入图像的视口下方的距离。</p>
+<h4 id="offsetLeft"><a href="#offsetLeft" class="headerlink" title="offsetLeft"></a>offsetLeft</h4><p>offsetRight选项允许您指定您希望Echo开始加载图像的视口左侧的距离。</p>
+<h4 id="offsetRight"><a href="#offsetRight" class="headerlink" title="offsetRight"></a>offsetRight</h4><p>offsetRight选项允许您指定您希望Echo开始加载图像的视口右侧的距离。</p>
+<h4 id="throttle"><a href="#throttle" class="headerlink" title="throttle"></a>throttle</h4><p>节气门由内部功能管理，可防止性能问题持续触发window.onscroll事件。当用户滚动时，使用节气门将设置一个小的超时，并保持节流直到用户停止。默认值为250毫秒。</p>
+<h4 id="debounce"><a href="#debounce" class="headerlink" title="debounce"></a>debounce</h4><p>默认情况下，节流功能实际上是一个去抖动功能，因此只有在用户停止滚动后才会触发检查功能。要使用传统的节流，它只会在每个节奏毫秒时检查图像，将去抖动设置为false。</p>
+<h4 id="unload"><a href="#unload" class="headerlink" title="unload"></a>unload</h4><p>一旦滚动超出了视口（包括偏移区域），这个选项就会告诉echo来卸载加载的图像。</p>
+<h4 id="callback"><a href="#callback" class="headerlink" title="callback"></a>callback</h4><p>回调将传递已更新的元素以及更新操作（即加载或卸载）。如果要添加类加载到元素中，这可能很有用。或做一些记录。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">echo.init(&#123;</div><div class="line">  <span class="attr">callback</span>: <span class="function"><span class="keyword">function</span>(<span class="params">element, op</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(op === <span class="string">'load'</span>) &#123;</div><div class="line">      element.classList.add(<span class="string">'loaded'</span>);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      element.classList.remove(<span class="string">'loaded'</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="render"><a href="#render" class="headerlink" title=".render()"></a>.render()</h4><blockquote>
+<p>Echo的回调render（）可以用于使Echo在您不滚动时轮询您的图像，例如，如果您有一个过滤器布局交换图像但不滚动，则需要调用内部函数而不滚动。对此使用render（）：</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">echo.render();</div></pre></td></tr></table></figure>
+<blockquote>
+<p>使用render（）也被限制，这意味着你可以将它绑定到一个onresize事件，它将以与onscroll相同的方式进行性能优化。</p>
+</blockquote>
+<h3 id="Configuring-Echo"><a href="#Configuring-Echo" class="headerlink" title="Configuring Echo"></a>Configuring Echo</h3><blockquote>
+<p>在data-echo属性中添加在视口内可见的需要加载的映像：</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/blank.gif"</span> <span class="attr">alt</span>=<span class="string">"Photo"</span> <span class="attr">data-echo</span>=<span class="string">"img/photo.jpg"</span>&gt;</span></div></pre></td></tr></table></figure>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/11/27/ionic学习笔记/"  title="ionic学习笔记">
+ <span>ionic学习笔记
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+		<div class="author-img"></div>		
+	
+	<div class="social-info" class="clearfix">
+		
+		
+		<a href="https://github.com/zzjalpaca" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:zzj_alpaca@163.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+
+	</div>
+</div>
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/map/" title="map">map<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ionic-app/" title="ionic app">ionic app<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Array/" title="Array">Array<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/object-prototype/" title="object prototype">object prototype<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+
+
+  
+
+  
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+		
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/hsihohuang/kiddochan" target="_blank" title="Kiddochan">Kiddochan</a> © 2017 
+		
+		<a href="/about" target="_blank" title="zhangzijian">zhangzijian</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
